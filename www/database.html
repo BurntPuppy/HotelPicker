@@ -23,7 +23,7 @@
             <div data-role="navbar">
             <ul>
                 <li>
-                    <a href="database.html">Database Example</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="#">Find Us</a>
@@ -31,24 +31,18 @@
             </ul><img alt="Hotel Finder" src="css/images/logo.png"></div>
         </div>
         <div data-role="content">
-            <h1>Hotel Type?</h1>
-            <ul data-inset="true" data-role="listview">
-                <li>
-                    <a href="choose_destination.html"><img src=
-                    "css/images/3.jpg">
-                    <h3>3 Star</h3></a>
-                </li>
-                <li>
-                    <a href="choose_destination.html"><img src=
-                    "css/images/1.jpg">
-                    <h3>4 Star</h3></a>
-                </li>
-                <li>
-                    <a href="choose_destination.html"><img src=
-                    "css/images/5.jpg">
-                    <h3>5 Star</h3></a>
-                </li>
-            </ul>
+            <div class="ui-field-contain">
+                <label for="text-1">Save Name to DB</label>
+                <input data-clear-btn="true" id="save" name="text-1" type=
+                "text" value="">
+            </div>
+            <div class="ui-field-contain">
+                <label for="text-1">Result from DB</label>
+                <input data-clear-btn="true" id="get" name="text-1" type="text"
+                value="">
+            </div><a data-role="button" href="" id="button-2" onclick=
+            "save();">Save to DB</a> <a data-role="button" href="" id=
+            "button-2" onclick="get();">Get from DB</a>
         </div><!-- /content -->
         <div data-role="footer" style="text-align:center;">
             <div data-role="controlgroup" data-type="horizontal">
